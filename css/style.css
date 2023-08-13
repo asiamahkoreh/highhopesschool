@@ -260,8 +260,34 @@ footer a {
 
 
 .footer-socials, .socials {
+    border-radius: 50%;
+    padding-bottom: 3rem;
     display: flex;
     gap: 0.8rem;
+}
+
+/* social media links styles */
+
+.icon {
+
+    height: 50px;
+    display: flex;
+    gap: 1rem;
+}
+
+.facebook-icon {
+    background-color: white;
+    padding: 0 4px;
+}
+
+.twitter-icon {
+    background-color: aqua;
+    padding: 0 4px;
+}
+
+.instagram-icon {
+    background-color: lightcoral;
+    padding: 0 4px;
 }
 
 
@@ -304,6 +330,8 @@ footer a {
     font-size: var(--font-size);
     line-height: var(--line-height);
 }
+
+
 
 
 
