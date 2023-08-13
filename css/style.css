@@ -348,9 +348,5 @@ footer a {
         font-size: var(--big-font-size);
     }
 
-    .additional img {
-        max-width: 500px;
-    }
-
 
 }
