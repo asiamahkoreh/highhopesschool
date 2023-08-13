@@ -81,7 +81,7 @@ nav img {
 .nav-links a {
     text-transform: capitalize;
     color: var(--secondary-color);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bolder;
 
 }
