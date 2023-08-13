@@ -1,0 +1,359 @@
+:root {
+    margin: 0;
+    padding: o;
+
+    --font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --background-color: #f5f5f5;
+    --secondary-background-color: green;
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --font-size: 1.3rem;
+    --nav-color: green;
+    --gap: 3rem;
+    --big-padding: 5rem;
+    --small-padding: 2rem;
+    --border-radius: 10px;
+    --big-font-size: 2rem;
+    --line-height: 1.5;
+    --school-color: green;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+p {
+    font-size: var(--font-size);
+}
+
+.container {
+    display: grid;
+    /* gap: 1.5rem; */
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* nav bar design */
+
+header {
+    background-color:  var(--nav-color);
+    grid-column: 1/8;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+nav {
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    gap: var(--gap);
+
+
+}
+
+nav img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links li {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+/* end of nav bar */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* hero banner design */
+
+.hero {
+    background: royalblue;
+    grid-column: 1/8;
+    min-height: 100vh;
+}
+
+
+
+/* intro design */
+
+.main-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: var(--small-padding);
+}
+
+.intro {
+    /* background-color: aquamarine; */
+    grid-column: 2/7;
+    min-height: 50vh;
+    padding: var(--small-padding);
+
+}
+
+.intro-heading {
+    font-size: var(--big-font-size);
+    color: var(--school-color);
+}
+
+
+
+/* info design */
+
+.info {
+    background-color: green;
+    grid-column: 1/8;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.info h1 {
+
+    font-size: var(--big-font-size);
+    color: var(--secondary-color);
+}
+
+.card, .more-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: var(--gap);
+    padding: var(--small-padding);
+    flex-wrap: wrap;
+
+}
+
+.card-item {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 300px;
+    height: 300px;
+    background: lightskyblue;
+    border-radius: var(--border-radius);
+    padding: var(--small-padding);
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: var(--big-font-size);
+    color: var(--secondary-color);
+}
+
+
+/* end of info design */
+
+/* more info design */
+
+.more-info {
+    grid-column: 2/7;
+    min-height: 80vh;
+}
+
+.additional {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+}
+
+.additional img {
+    height: 500px;
+    border-radius: var(--border-radius);
+}
+
+.additional-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end of more info design */
+
+/* footer css */
+
+footer {
+    background-color: var(--primary-color);
+    grid-column: 1/8;
+    color: var(--secondary-color);
+    min-height: 80vh;
+    text-transform: capitalize;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: var(--gap);
+    padding: var(--small-padding);
+    flex-wrap: wrap;
+
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+
+.footer-socials, .socials {
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+/* end of footer styling */
+
+
+/* admmision style */
+
+
+.admision-requirement li {
+    list-style-type: circle;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+.admision-requirement ol > li {
+    list-style-type: decimal;
+}
+
+
+
+/* contact */
+
+.my-form {
+
+    grid-column: 2/7;
+    padding-top: var(--small-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.contact-intro {
+    padding-top: var(--big-padding);
+}
+
+.additional-text li {
+    list-style-type: none;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+
+
+/* mobile view style */
+
+@media (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: var(--big-font-size);
+    }
+
+    .additional img {
+        max-width: 500px;
+    }
+
+
+}
