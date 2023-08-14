@@ -337,23 +337,9 @@ footer a {
 }
 
 
-/* tablet  */
+/* tablet view */
 
-
-
-
-/* mobile view style */
-
-@media (max-width: 600px) {
-
-    :root {
-        --big-font-size: 1.5rem;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 1000px) {
 
     .nav-links {
         display: flex;
@@ -373,6 +359,23 @@ footer a {
 
     .nav-toggle {
         display: inline-block;
+    }
+
+}
+
+
+
+/* mobile view style */
+
+@media (max-width: 600px) {
+
+    :root {
+        --big-font-size: 1.5rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .info img {
