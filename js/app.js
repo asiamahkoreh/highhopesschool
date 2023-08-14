@@ -1,6 +1,6 @@
 const nav = document.querySelector("nav");
 const navLinks = document.querySelector("#nav-links");
-const navToggle = document.querySelector("#nav-toggle");
+const hamburgerButton = document.querySelector("#hamburger-button");
 
 
 navToggle.addEventListener("click", showMobileNavLinks);
