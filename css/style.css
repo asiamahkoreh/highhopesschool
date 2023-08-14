@@ -98,7 +98,10 @@ ul {
 /* hero banner design */
 
 .hero {
-    background: royalblue;
+    background: url(./images/afra.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
 }
 
@@ -178,6 +181,18 @@ ul {
 }
 
 
+.kindergarten {
+    background: url(./images/background.jpg);
+}
+
+.kindergarten {
+    background: url(./images/background.jpg);
+}
+
+.kindergarten {
+    background: url(./images/background.jpg);
+}
+
 /* end of info design */
 
 /* more info design */
@@ -199,7 +214,7 @@ ul {
 }
 
 .additional img {
-    height: 500px;
+    /* height: 500px; */
     border-radius: var(--border-radius);
 }
 
@@ -408,20 +423,17 @@ footer a {
 }
 
 
-@media (max-width: 250px) {
+@media (max-width: 290px) {
 
-    nav {
-        flex-direction: column;
-    }
 
 
     .card-item {
-
+        width: 200px;
         font-size: var(--font-size);
     }
 
     .additional img {
-        max-width: 200px;
+        max-width: 250px;
     }
 
 }
