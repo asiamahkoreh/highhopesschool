@@ -35,7 +35,7 @@ p {
 }
 
 .container {
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     /* gap: 1.5rem; */
     grid-template-columns: repeat(7, 1fr);
@@ -57,7 +57,7 @@ nav {
     height: 70px;
     padding: 0.8rem 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: var(--gap);
 
@@ -93,9 +93,6 @@ nav img {
 
 .nav-toggle {
     display: none;
-    color: #ffffff;
-    font-size: 40px;
-    background-color: transparent;
 }
 
 
@@ -361,7 +358,11 @@ footer a {
     }
 
     .nav-toggle {
-        display: inline-block;
+        display: block;
+        color: #ffffff;
+        font-size: 40px;
+        background-color: transparent;
+        border: 0;
     }
 
 }
