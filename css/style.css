@@ -93,6 +93,9 @@ nav img {
 
 .nav-toggle {
     display: none;
+    color: #ffffff;
+    font-size: 40px;
+    background-color: transparent;
 }
 
 
@@ -341,7 +344,7 @@ footer a {
 
 @media (max-width: 1000px) {
 
-    .nav-links {
+    .show-links {
         display: flex;
         flex-direction: column;
         align-items: center;
