@@ -84,8 +84,16 @@ nav ul {
     display: none;
 }
 
-
 /* end of nav bar */
+
+/* logo image */
+.logo-image {
+    height: 50px;
+    border-radius: 10px;
+
+}
+
+
 
 a {
     text-decoration: none;
@@ -102,7 +110,7 @@ ul {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 
@@ -185,11 +193,11 @@ ul {
     background: url(./images/background.jpg);
 }
 
-.kindergarten {
+.primary {
     background: url(./images/background.jpg);
 }
 
-.kindergarten {
+.high-school {
     background: url(./images/background.jpg);
 }
 
@@ -198,7 +206,7 @@ ul {
 /* more info design */
 
 .more-info {
-    /* grid-column: 2/7; */
+
     min-height: 70vh;
 
 }
@@ -214,7 +222,7 @@ ul {
 }
 
 .additional img {
-    /* height: 500px; */
+
     border-radius: var(--border-radius);
 }
 
@@ -227,11 +235,36 @@ ul {
 
 /* end of more info design */
 
+/* button container style */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.btn {
+    font-size: var(--big-font-size);
+    padding: 0.8rem;
+    background-color: var(--school-color);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
 /* footer css */
 
 footer {
     background-color: var(--primary-color);
-    /* grid-column: 1/8; */
     color: var(--secondary-color);
     min-height: 70vh;
     text-transform: capitalize;
@@ -300,6 +333,7 @@ footer a {
     padding: 6px;
     border-radius: 5px;
 }
+
 .facebook-icon {
     background-color: white;
 }
@@ -329,6 +363,9 @@ footer a {
     list-style-type: decimal;
 }
 
+.admision-requirement ol > li > ul > li {
+    list-style-type: circle;
+}
 
 
 /* contact */
