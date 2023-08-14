@@ -47,17 +47,20 @@ header {
     background-color:  var(--nav-color);
     grid-column: 1/8;
     position: fixed;
-    width: 100vw;
+
     top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav {
     height: 70px;
     padding: 0.8rem 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: var(--gap);
+
 
 
 }
@@ -334,6 +337,8 @@ footer a {
 }
 
 
+/* tablet  */
+
 
 
 
@@ -368,6 +373,10 @@ footer a {
 
     .nav-toggle {
         display: inline-block;
+    }
+
+    .info img {
+        max-width: 400px;
     }
 
     .footer-info {
