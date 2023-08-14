@@ -99,7 +99,6 @@ ul {
 
 .hero {
     background: royalblue;
-    grid-column: 1/8;
     min-height: 100vh;
 }
 
@@ -138,7 +137,7 @@ ul {
 
 .info {
     background-color: green;
-    /* grid-column: 1/8; */
+
     min-height: 70vh;
     display: flex;
     justify-content: center;
@@ -321,7 +320,6 @@ footer a {
 
 .my-form {
 
-    /* grid-column: 2/7; */
     padding-top: var(--small-padding);
     display: flex;
     justify-content: center;
@@ -347,23 +345,24 @@ footer a {
 
 @media (max-width: 1000px) {
 
+    nav {
+        justify-content: space-around;
+        padding: 0;
+    }
+
 
     .nav-links li {
         display: flex;
         padding: 0.4rem;
     }
 
-    /* .nav-links {
+    .nav-links {
         display: none;
-    } */
+    }
 
-    /* .nav-toggle {
+    .nav-toggle {
         display: block;
-        color: #ffffff;
-        font-size: 40px;
-        background-color: transparent;
-        border: 0;
-    } */
+    }
 
 }
 
@@ -397,6 +396,14 @@ footer a {
         width: 100vw;
     }
 
+    .sub-intro {
+        width: 80vw;
+    }
+
+    .info {
+        width: 100vw;
+    }
+
 
 }
 
@@ -405,10 +412,6 @@ footer a {
 
     nav {
         flex-direction: column;
-    }
-
-    .info {
-        width: 80vw;
     }
 
 
