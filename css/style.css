@@ -106,7 +106,7 @@ ul {
 /* hero banner design */
 
 .hero {
-    background-image: url('./images/afra.png');
+    background-image: url(./images/licensed-image.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
