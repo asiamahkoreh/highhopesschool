@@ -40,47 +40,50 @@ p {
 
 
 nav {
-    background-color:  var(--nav-color);
-    height: 70px;
-    padding: 0.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--gap);
-    width: 100vw;
-    position: fixed;
-    top: 0;
-
-
-
-}
-
-nav img {
-    height: 50px;
-    border-radius: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    /* width: 500px; */
+    text-transform: capitalize;
     padding: 1rem 2rem;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--school-color);
+    /* opacity: 1; */
+    z-index: 5;
+    top: 0;
 }
 
-.nav-links li {
-    padding: 0.6rem;
 
+nav h2 {
+    font-size: 30px;
+    color: var(--secondary-color);
 }
 
-.nav-links a {
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: auto;
+}
+
+.links li {
+    list-style: none;
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 1rem;
     text-transform: capitalize;
     color: var(--secondary-color);
-    font-size: 1.1rem;
-    font-weight: bolder;
-
+    cursor: pointer;
+}
+ul.show {
+    display: block;
 }
 
-.nav-toggle {
+.hamburger {
     display: none;
 }
 
@@ -398,23 +401,35 @@ footer a {
 @media (max-width: 1000px) {
 
     nav {
-        justify-content: space-around;
-        padding: 0;
-    }
+        flex-direction: column-reverse;
+        justify-content: center;
+        /* padding-right: 2rem; */
+   }
 
+   nav h2 {
+        font-size: 20px;
 
-    .nav-links li {
-        display: flex;
-        padding: 0.4rem;
-    }
-
-    .nav-links {
         display: none;
-    }
+   }
 
-    .nav-toggle {
+   .links {
+        display: none;
+        font-size: 18px;
+        padding: 0.5rem;
+        height: auto;
+   }
+
+   .links li {
+        margin-bottom: 0.5rem;
+   }
+
+   .hamburger {
         display: block;
-    }
+        border: none;
+        background: transparent;
+        font-size: 30px;
+        align-self: flex-end;
+   }
 
 }
 
