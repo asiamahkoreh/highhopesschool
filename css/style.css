@@ -106,11 +106,11 @@ ul {
 /* hero banner design */
 
 .hero {
-    background: url(./images/afra.png);
+    background-image: url('./images/afra.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 50vh;
 }
 
 
