@@ -428,7 +428,7 @@ footer a {
         border: none;
         background: transparent;
         font-size: 30px;
-        align-self: flex-end;
+        align-self: center;
    }
 
 }
