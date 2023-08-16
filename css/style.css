@@ -41,7 +41,7 @@ p {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-transform: capitalize;
     padding: 1rem;
