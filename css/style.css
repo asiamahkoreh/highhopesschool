@@ -53,6 +53,13 @@ nav {
     top: 0;
 }
 
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+}
+
 
 nav h2 {
     font-size: 30px;
@@ -402,10 +409,12 @@ footer a {
 @media (max-width: 1000px) {
 
     nav {
+        display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        /* padding-right: 2rem; */
+        align-items: center;
    }
+
 
    nav h2 {
         font-size: 20px;
@@ -429,7 +438,7 @@ footer a {
         border: none;
         background: transparent;
         font-size: 30px;
-        align-self: center;
+        /* align-self: center; */
    }
 
 }
