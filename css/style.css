@@ -271,6 +271,7 @@ footer {
     color: var(--secondary-color);
     min-height: 70vh;
     text-transform: capitalize;
+    width: 100vw;
 }
 
 .footer-info {
@@ -469,6 +470,10 @@ footer a {
 
     .info {
         width: 100vw;
+    }
+
+    .google-map, .google-form {
+        max-width: 360px;
     }
 
 
