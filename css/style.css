@@ -228,16 +228,13 @@ ul {
 
 }
 
-.card-item {
+.staff2, .card-item {
 
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 250px;
     height: 200px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: var(--border-radius);
     padding: var(--small-padding);
     text-transform: capitalize;
@@ -268,18 +265,32 @@ ul {
 /*  card item background staff photos */
 .staff1 {
     background: url(../images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .staff2 {
     background: url(../images/kg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .staff3 {
     background: url(../images/primary.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .staff4 {
     background: url(../images/primary2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* more info design */
