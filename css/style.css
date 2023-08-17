@@ -149,13 +149,18 @@ ul {
 
 /* hero banner design */
 
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+}
+
 .hero {
-    /* background: url('./images/afra.png'); */
-    background: lightblue;
+    background-image: url('../images/background.jpg');
+    /* background: lightblue; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -243,17 +248,18 @@ ul {
     /* box-shadow: var(--box-shadow); */
 }
 
-/* .kindergarten {
-    background: url(./images/background.jpg);
+.kindergarten {
+    background: url(../images/background.jpg);
+    opacity: 0.9;
 }
 
 .primary {
-    background: url(./images/background.jpg);
+    background: url(../images/background2.jpg);
 }
 
 .high-school {
-    background: url(./images/background.jpg);
-} */
+    background: url(../images/background.jpg);
+}
 
 /* end of info design */
 
