@@ -16,7 +16,9 @@
     --big-font-size: 2rem;
     --line-height: 1.5;
     --school-color: green;
+    --box-shadow: 4px 4px 4px rgba(2, 24, 2, 0.1);
 }
+
 
 body {
     background-color: var(--background-color);
@@ -34,6 +36,27 @@ p {
     font-size: var(--font-size);
 }
 
+
+/* header */
+
+.header {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--school-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 1rem;
+    height: 30px;
+    color: var(--secondary-color);
+
+}
+
+header a, nav a {
+    color: #fff;
+}
 
 /* nav bar design */
 
@@ -90,8 +113,19 @@ ul.show {
     display: block;
 }
 
+.nav-icon  {
+
+    height: 30px;
+    padding: 6px;
+    border-radius: 5px;
+
+}
+
 .hamburger {
     display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
 }
 
 /* end of nav bar */
@@ -116,11 +150,17 @@ ul {
 /* hero banner design */
 
 .hero {
-    background-image: url(./images/licensed-image.jpeg);
+    background: url('./images/afra.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    height: 80vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-transform: var(--text-transform);
 }
 
 
@@ -143,7 +183,7 @@ ul {
 .sub-intro {
 
     padding-top: var(--small-padding);
-    min-height: 50vh;
+    min-height: 70vh;
     width: 60vw;
 }
 
@@ -159,7 +199,7 @@ ul {
 .info {
     background-color: green;
 
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,20 +226,23 @@ ul {
 
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     width: 250px;
     height: 200px;
     background: lightskyblue;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: var(--border-radius);
     padding: var(--small-padding);
     text-transform: capitalize;
     font-weight: bolder;
     font-size: var(--big-font-size);
     color: var(--secondary-color);
+    /* box-shadow: var(--box-shadow); */
 }
 
-
-.kindergarten {
+/* .kindergarten {
     background: url(./images/background.jpg);
 }
 
@@ -209,7 +252,7 @@ ul {
 
 .high-school {
     background: url(./images/background.jpg);
-}
+} */
 
 /* end of info design */
 
@@ -279,6 +322,7 @@ footer {
     min-height: 70vh;
     text-transform: capitalize;
     width: 100vw;
+    margin-top: 3rem;
 }
 
 .footer-info {
@@ -408,11 +452,18 @@ footer a {
 
 @media (max-width: 1000px) {
 
+    header {
+        display: block;
+
+    }
+
+
     nav {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        top: 55px;
    }
 
 
@@ -440,6 +491,10 @@ footer a {
         font-size: 30px;
         /* align-self: center; */
    }
+
+   .sub-intro {
+    min-height: 50vh;
+}
 
 }
 
