@@ -150,7 +150,8 @@ ul {
 /* hero banner design */
 
 .hero {
-    background: url('./images/afra.png');
+    /* background: url('./images/afra.png'); */
+    background: lightblue;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -294,7 +295,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 3rem 0;
 }
 
 .btn {
